@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<!-- saved from url=(0041)http://127.0.0.1:5500/Slidingproduct.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>T-shirt</title>
+    <style>
+        * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(#445500, #555500 50%, #f8f8f8 50%, #FFF8F3 100%);
+}
+
+.card {
+  position: relative;
+  width: 300px;
+  height: 350px;
+  background: #000;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.220);
+  display: flex;
+  overflow: hidden;
+  transition: 0.5s ease-in-out;
+  border-radius: 10px;
+}
+
+.card:hover {
+  width: 600px;
+}
+
+.card .imgBx {
+  position: relative;
+  min-width: 300px;
+  height: 100%;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  z-index: 2;
+}
+
+.card .imgBx img {
+  max-width: 250px;
+  transition: 0.5s ease-in-out;
+}
+
+.card:hover .imgBx img {
+  transform: rotate(-35deg) translate(-20px);
+}
+
+.card .details {
+  position: absolute;
+  left: 0;
+  min-width: 300px;
+  height: 100%;
+  background: #96bb0f;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  padding: 20px;
+  flex-direction: column;
+  z-index: 1;
+  transition: 0.5s ease-in-out;
+}
+
+.card:hover .details {
+  left: 300px;
+}
+
+.card .details::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid #fff;
+}
+
+.card .details h3 {
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 1.5em;
+  line-height: 1em;
+}
+
+.card .details h3 span {
+  font-size: 0.65em;
+  font-weight: 300;
+  text-transform: none;
+  opacity: 0.85;
+}
+
+.card .details h4 {
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-weight: 0.9em;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  line-height: 1em;
+} 
+
+.card .details p {
+  color: #fff;
+  opacity: 0.35;
+  font-size: 0.8em;
+}
+
+.card .details .size {
+  display: flex;
+  gap: 10px;
+}
+
+.card .details .size li {
+  list-style: none;
+  color: #fff;
+  font-size: 0.9em;
+  width: 40px;
+  height: 40px;
+  border: 2px solid #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  opacity: 0.65;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.1s;
+}
+
+.card .details .size li:hover {
+  color: #759610;
+  background: #fff;
+  opacity: 1;
+}
+
+.card .details .group {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.card .details .group h2 {
+  color: #fff;
+  font-weight: 600;
+  font-size: 2em;
+}
+
+.card .details .group h2 sup {
+  font-weight: 300;
+}
+
+.card .details .group h2 small {
+  font-size: 0.75em;
+}
+
+.card .details .group a {
+  display: inline-flex;
+  padding: 10px 25px;
+  background: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 500;
+  border-radius: 8px;
+  color: #c3c32f;
+  box-shadow: 0 15px 15px rgba(0, 0, 0, 0.288);
+  transition: 0.3s;
+}
+
+.card .details .group a:hover {
+  background: #9ea309;
+  color: #fff;
+}
+
+.tag {
+  position: absolute;
+  bottom: 8px;
+  right: 10px;
+  color: rgba(151, 150, 150, 0.781);
+  font-size: 10px;
+}
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <div class="imgBx">
+        <img src="./T-shirt_files/H&amp;M.webp">
+        /&gt;
+      </div>
+      <div class="details">
+        <h3> H&amp;M T-shirt<br><span>Men's t-shirt</span></h3>
+        <h4>PRODUCT DETAILS</h4>
+        <p>a collarless half-sleeved black t-shirt,
+            fully cotton textile </p>
+        <h4>Size</h4>
+        <ul class="size">
+          <li>S</li>
+          <li>M</li>
+          <li>L</li>
+          <li>XL</li>
+          <li>XXL</li>
+        </ul>
+        <div class="group">
+          <h2>Rs.899<small>.99</small></h2>
+          <a href="http://127.0.0.1:5500/Slidingproduct.html#">Buy Now</a><br>
+        </div>
+      </div>
+    </div>
+    
+  <!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
